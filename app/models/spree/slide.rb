@@ -1,4 +1,4 @@
-class Spree::Product::Slide < ActiveRecord::Base
+class Spree::Slide < ActiveRecord::Base
 
   has_attached_file :image
   include Spree::Core::S3Support
