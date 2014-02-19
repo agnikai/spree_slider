@@ -5,6 +5,11 @@ class Spree::Admin::SlidesController < Spree::Admin::ResourceController
     @slides = Spree::Slide.all
   end
 
+  def preview
+    @slides = Spree::Slide.all
+    render :preview, layout: 'application'
+  end
+  
   private
 
   def slide_params

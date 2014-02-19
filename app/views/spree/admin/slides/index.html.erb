@@ -6,6 +6,9 @@
   </li>
 <% end %>
 
+<h1>Preview</h1>
+<iframe src="<%= preview_admin_slides_url %>" seamless="seamless" style="width:100%; height: 450px;"></iframe>
+
 <h1><%= t('spree_slider.title') %></h1>
 
 <table class="index" id="listing_slides" data-hook>
@@ -33,3 +36,5 @@
     <% end %>
   </tbody>
 </table>
+
+<!-- <h3><%= link_to "Open Preview Window", preview_admin_slides_url %></h3> -->
